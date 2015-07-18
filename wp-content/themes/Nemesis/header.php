@@ -15,6 +15,8 @@
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" type="image/vnd.microsoft.icon"/>
+<link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" type="image/x-ico"/>
 
 
 <?php // We are loading our theme directory style.css by queuing scripts in our functions.php file, 

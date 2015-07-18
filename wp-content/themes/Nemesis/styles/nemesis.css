@@ -363,7 +363,7 @@ header .header-holder .content a {
 
 .full-background.home {
     background-size: cover;
- 
+	background-position: center center;
 }
 
 .home p{
@@ -373,7 +373,7 @@ header .header-holder .content a {
 }
 
 .home .the-content p {
-    bottom: 20px;
+    top:50px;
     font-size: 35px;
     line-height:40px;
     font-weight:400;
