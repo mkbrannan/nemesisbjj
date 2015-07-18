@@ -1,0 +1,354 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,700,800);
+
+@import url('styles/nemesis.css');
+/*
+Theme Name: Nemesis BJJ 2.0
+Author: Michelle Brannan
+Description: Nemesis BJJ theme developed from a Naked Wordpress Base
+
+-------------------------------------------------------------- */
+/* Reset
+-------------------------------------------------------------- */
+
+
+/* HTML5 display-role reset for older browsers */
+
+/*@import url('styles/boots-bones.css');*/
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  bottom: 1ex;
+}
+sub {
+  top: .5ex;
+}
+small {
+  font-size: 75%;
+}
+big {
+  font-size: 125%;
+}
+figure {
+  margin: 0;
+}
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+th {
+  font-weight: bold;
+}
+
+
+/* typography
+-------------------------------------------------------------- */
+/* Headings */
+
+
+ul,
+ol {
+  margin: 0 0 1.5em 3em;
+}
+
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 1.5em 1.5em;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+blockquote {
+  margin: 0 1.5em;
+}
+address {
+  margin: 0 0 1.5em;
+}
+pre {
+  background: #eee;
+  font-size: 0.7em;
+  line-height: 1.5em;
+  margin-bottom: 1.6em;
+  padding: 1.6em;
+  overflow: auto;
+  max-width: 100%;
+  box-shadow: 0 3px 5px #ddd inset;
+}
+/* Links */
+
+/* Alignment */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+/* Header
+-------------------------------------------------------------- */
+
+
+header .gravatar {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0;
+  float: right;
+}
+
+
+
+/* Pagination */
+#pagination {
+  margin-bottom: 40px;
+  width: 100%;
+}
+#pagination .past-page {
+  float: right;
+  width: 49%;
+  text-align:right;
+}
+#pagination .next-page {
+  float: left;
+  width: 50%;
+  border-right: 1px solid #ccc;
+  height: 200px;
+}
+.next-page a, .past-page a {
+  font-size: 2em;
+  font-weight: 400;
+  font-style: italic;
+  padding: 10%;
+}
+/* Comments */
+h3#comments {
+  margin-bottom: 80px;
+  font-size: 16px;
+}
+.commentlist {
+  list-style: none;
+  margin: 0;
+}
+.commentlist .comment {
+  margin: 0 0 40px 50px;
+  padding: 20px;
+  position: relative;
+  list-style: none;
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.commentlist .comment .children {
+  margin-top: 40px;
+}
+.commentlist .comment-author {
+  float: left;
+  margin-right: 10px;
+}
+.commentlist .comment-author img {
+  position: absolute;
+  left: -50px;
+  top: 5px;
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.commentlist .comment-author .says {
+  display: none;
+}
+.comment-meta {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.comment-subscription-form,
+.comment-subscription-form {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+#respond {
+  margin-bottom: 80px;
+}
+#respond > h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+#respond form label {
+  color: #888888;
+}
+
+/* Misc & mixens
+-------------------------------------------------------------- */
+.site-footer{
+}
+.hide-text {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.clear {
+  clear: both;
+}
+/* clear floats */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+
+/* #Media Queries
+================================================== */
+
+  /* Those wide screens above 1280px */
+  @media only screen and (min-width: 1281px) {
+    body{
+      font-size: 2.5em;
+      line-height: 1.5em;
+    }
+    article .title{
+      font-size: 1.8em;
+      line-height: 1.5em;
+    }
+    article .post-meta{
+      font-size: 0.7em;
+      line-height: 1em;
+    }
+    .menu-main-nav-container a, .side-title, .menu-main-container a{
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+    #sidebar{
+      font-size: 0.7em;
+      line-height: 1.5em;
+    }
+    #sidebar h3{
+      font-size: 1.5em;
+      line-height: 1.5em;
+    }
+  }
+
+  /* Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) {
+    .side-title{
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+  }
+
+  /* Tablet Portrait size to standard 960 (devices and browsers) */
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .side-title{
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+  }
+
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {
+    .side-title{
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+  }
+
+  /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    body, article .post-meta{
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+    article .title{
+      font-size: 2em;
+      line-height: 1.5em;
+    }
+    .site-title{
+      font-size: 10px !important;
+      line-height: 50px;
+    }
+    .menu-main-nav-container a, .side-title, .menu-main-container a{
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+  }
+
+  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width: 479px) {
+    body, article .post-meta{
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+    article .title{
+      font-size: 2em;
+      line-height: 1.5em;
+    }
+    .site-title{
+      font-size: 6px !important;
+      line-height: 30px;
+    }
+    .menu-main-nav-container a, .side-title, .menu-main-container a{
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+  }

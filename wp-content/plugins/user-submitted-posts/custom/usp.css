@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* 
+	User Submitted Posts > CSS > HTML5 form
+	http://perishablepress.com/user-submitted-posts/
+	Complete list of CSS hooks for the submission form @ http://m0n.co/e
+*/
+
+fieldset {
+    border: medium none;
+    margin: 40px auto;
+    padding:0;
+    text-align: center;
+    width:80%;
+}
+
+
+
+#usp-error-message{
+	background:#ce2031;
+	padding: 5px 0; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color:#fff;
+}
+
+
+/* JS > Parsley */
+.parsley-errors-list {
+	background:#ce2031;
+	list-style-type: none; 
+	float: left; 
+	clear: both; 
+	margin:10px 0 0 0; 
+	padding: 5px 0; 
+	font-size: 11px; 
+	line-height: 18px; 
+	color: #fff; 
+	width:100%;
+	
+	-webkit-transition: all 0.5s ease-in; 
+	-moz-transition: all 0.5s ease-in; 
+	-o-transition: all 0.5s ease-in; 
+	transition: all 0.5s ease-in;
+	opacity: 0; -moz-opacity: 0; 
+	-webkit-opacity: 0;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	}
+.parsley-errors-list.filled { 
+	opacity: 1
+	
+ }
+.parsley-required { margin: 0; padding: 2px 3px; }
+.usp-files-error { margin-top: -5px; }
+.usp-hidden, .usp-no-js { display: none; }
+.usp-js { display: block; }
